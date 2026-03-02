@@ -91,9 +91,9 @@ function prevPage() {
 function initForexCharts() {
 
     const forexCharts = [
-        { id: "usdEurChart", label: "USD/EUR", data: [0.88,0.89,0.87,0.91,0.90,0.92,0.91], color:"#0b5ed7"},
-        { id: "usdJpyChart", label: "USD/JPY", data: [115,116,114,117,118,116,117], color:"#28a745"},
-        { id: "gbpUsdChart", label: "GBP/USD", data: [1.32,1.31,1.33,1.34,1.32,1.35,1.36], color:"#ffc107"}
+        { id: "usdEurChart", label: "USD/EUR", data: [0.88, 0.89, 0.87, 0.91, 0.90, 0.92, 0.91], color: "#0b5ed7" },
+        { id: "usdJpyChart", label: "USD/JPY", data: [115, 116, 114, 117, 118, 116, 117], color: "#28a745" },
+        { id: "gbpUsdChart", label: "GBP/USD", data: [1.32, 1.31, 1.33, 1.34, 1.32, 1.35, 1.36], color: "#ffc107" }
     ];
 
     forexCharts.forEach(chart => {
@@ -104,7 +104,7 @@ function initForexCharts() {
         new Chart(canvas.getContext("2d"), {
             type: "line",
             data: {
-                labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul"],
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
                 datasets: [{
                     label: chart.label,
                     data: chart.data,
@@ -117,8 +117,8 @@ function initForexCharts() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins:{
-                    legend:{ position:"top" }
+                plugins: {
+                    legend: { position: "top" }
                 }
             }
         });
@@ -190,9 +190,9 @@ function createRatingsChart(data) {
         },
         options: {
             responsive: true,
-            maintainAspectRatio:false,
-            scales:{
-                y:{ beginAtZero:true, max:10 }
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, max: 10 }
             }
         }
     });
@@ -208,25 +208,25 @@ function initSlider() {
         loop: true,
         grabCursor: true,
 
-        autoplay:{
-            delay:2500,
-            disableOnInteraction:false
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
         },
 
-        pagination:{
-            el:".swiper-pagination",
-            clickable:true
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
         },
 
-        navigation:{
-            nextEl:".swiper-button-next",
-            prevEl:".swiper-button-prev"
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
         },
 
-        breakpoints:{
-            0:{slidesPerView:1},
-            768:{slidesPerView:2},
-            1200:{slidesPerView:3}
+        breakpoints: {
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 }
         }
     });
 }

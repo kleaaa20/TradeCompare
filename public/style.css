@@ -90,7 +90,7 @@ body {
 .trust {
     text-align: center;
     padding: 60px 20px;
-    background: #eef3ff; 
+    background: #eef3ff;
 }
 
 .trust h2 {
@@ -111,14 +111,14 @@ body {
     padding: 25px;
     width: 250px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
 }
 
 .trust-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .trust-icon {
@@ -188,7 +188,7 @@ body {
 .table-container {
     padding: 50px 20px;
     overflow-x: auto;
-    background: #f9fafc; 
+    background: #f9fafc;
     border-radius: 12px;
     margin: 40px 0;
 }
@@ -208,7 +208,7 @@ table {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     min-width: 600px;
 }
 
@@ -302,7 +302,7 @@ td a:hover {
     gap: 30px;
     flex-wrap: wrap;
     padding: 60px 20px;
-    background: #f5f7fb; 
+    background: #f5f7fb;
     text-align: center;
 }
 
@@ -346,7 +346,7 @@ td a:hover {
     color: #333;
 }
 
-/* About */
+/* About Section */
 .about-container {
     width: 85%;
     max-width: 1200px;
@@ -429,7 +429,7 @@ td a:hover {
 }
 
 .forex-chart-card canvas {
-    flex-grow: 1;       
+    flex-grow: 1;
 }
 
 /* Contact Section */
@@ -521,15 +521,36 @@ footer {
     color: #f0f0f0;
 }
 
-/* Responsive */
+/* Responsive Fixes for Mobile */
 @media (max-width: 768px) {
+
+    /* Contact section */
     .contact-container,
     .contact-info {
         flex-direction: column;
         text-align: center;
     }
 
+    /* Table responsiveness */
     .table-container table {
         min-width: 500px;
+    }
+
+    /* About section fix */
+    .about-card {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-card img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .about-card h2,
+    .about-card p {
+        text-align: center;
     }
 }
