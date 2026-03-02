@@ -1,5 +1,6 @@
+// api/platforms.js
 export default function handler(req, res) {
-  const platformData = [
+  const platforms = [
     { name: "Robinhood", fees: "$0", minDeposit: "$0", bestFor: "Beginner Investors", rating: 8.8, url: "#" },
     { name: "Fidelity", fees: "$0", minDeposit: "$0", bestFor: "Retirement Investing", rating: 9.5, url: "#" },
     { name: "Charles Schwab", fees: "$0", minDeposit: "$0", bestFor: "Research Tools", rating: 9.3, url: "#" },
@@ -11,5 +12,6 @@ export default function handler(req, res) {
     { name: "Merrill Edge", fees: "$0", minDeposit: "$0", bestFor: "Bank Integration", rating: 8.7, url: "#" },
     { name: "SoFi Invest", fees: "$0", minDeposit: "$0", bestFor: "Social Investing & Robo", rating: 8.5, url: "#" }
   ];
-  res.status(200).json(platformData);
+
+  res.status(200).json(platforms);
 }
