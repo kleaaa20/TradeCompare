@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeCompare | Compare Best Stock Trading Platforms in the USA (2026)</title>
+    <meta name="description"
+        content="Compare the best US stock trading platforms including fees, ratings and investor tools.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>TradeCompare</h2>
+        <div class="nav-links">
+            <a href="#compare">Compare</a>
+            <a href="#education">Education</a>
+            <a href="about.html">About</a>
+            <button onclick="toggleDarkMode()">🌙</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Compare the Best Stock Trading Platforms</h1>
+        <p>Independent comparison built for modern U.S. investors. We combine accurate data, expert analysis, and
+            easy-to-understand metrics to guide your investment choices.</p>
+        <a href="#compare" class="cta">View Comparison</a>
+    </section>
+
+    <section class="trust">
+        <h2>Why Trust Our Comparison?</h2>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <span class="trust-icon">🔍</span>
+                <h3>Independent Research</h3>
+                <p>Our team analyzes trading platforms without bias to provide honest evaluations.</p>
+            </div>
+            <div class="trust-card">
+                <span class="trust-icon">📊</span>
+                <h3>Updated Market Data</h3>
+                <p>We refresh our data regularly to reflect the latest fees, tools, and platform features.</p>
+            </div>
+            <div class="trust-card">
+                <span class="trust-icon">🎯</span>
+                <h3>Beginner Friendly</h3>
+                <p>Easy-to-understand comparisons allow both new and experienced investors to make informed decisions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+        <div class="swiper mySlider">
+            <div class="swiper-wrapper" id="cardsContainer"></div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- Ratings Chart -->
+    <section class="charts">
+        <h2>Platform Ratings Overview</h2>
+        <div class="chart-wrapper" style="height: 350px;">
+            <canvas id="ratingsChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Forex Charts -->
+    <section class="forex-section">
+        <h2>Forex Market Overview</h2>
+        <div class="forex-charts">
+            <div class="forex-chart-card">
+                <h3>USD/EUR</h3>
+                <canvas id="usdEurChart"></canvas>
+            </div>
+            <div class="forex-chart-card">
+                <h3>USD/JPY</h3>
+                <canvas id="usdJpyChart"></canvas>
+            </div>
+            <div class="forex-chart-card">
+                <h3>GBP/USD</h3>
+                <canvas id="gbpUsdChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section id="compare" class="table-container comparison-table">
+        <p class="updated">Last Updated: March 2026</p>
+        <input type="text" id="searchInput" placeholder="Search platform..." onkeyup="searchTable()">
+        <table id="platformTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Platform</th>
+                    <th>Fees</th>
+                    <th>Minimum Deposit</th>
+                    <th>Best For</th>
+                    <th onclick="sortTable(4)">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </section>
+    <div class="table-pagination">
+        <button onclick="prevPage()">⬅ Prev</button>
+        <span id="pageInfo"></span>
+        <button onclick="nextPage()">Next ➡</button>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="education-cards">
+        <h2>Learn About Trading Platforms</h2>
+        <div class="edu-card">
+            <span class="edu-icon">💰</span>
+            <h3>Understanding Fees</h3>
+            <p>Trading fees vary widely. We break them down clearly to save you money.</p>
+        </div>
+        <div class="edu-card">
+            <span class="edu-icon">🏦</span>
+            <h3>Account Minimums</h3>
+            <p>Learn which platforms require deposits and which let you start trading with $0.</p>
+        </div>
+        <div class="edu-card">
+            <span class="edu-icon">📊</span>
+            <h3>Platform Tools</h3>
+            <p>Compare research, charting, and automation tools to suit your trading style.</p>
+        </div>
+    </section>
+
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Have questions, suggestions, or need support? Reach out to us through any of the options below. We’re
+                    happy to help!</p>
+                <ul>
+                    <li>📧 Email: <a href="mailto:support@tradecompare.com">support@tradecompare.com</a></li>
+                    <li>💬 WhatsApp: <a href="https://wa.me/1234567890" target="_blank">Chat Now</a></li>
+                    <li>📞 Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                </ul>
+            </div>
+            </div>
+    </section>
+    <footer>
+        <p>© 2026 TradeCompare | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
