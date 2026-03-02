@@ -85,4 +85,8 @@ export default function handler(req, res) {
     ];
 
     res.status(200).json(platforms);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0282c2d (Add Vercel API for platforms)
